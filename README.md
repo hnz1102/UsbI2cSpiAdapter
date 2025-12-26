@@ -1,14 +1,16 @@
-# USB-I2C/SPI Adapter Hardware Design
+# USB-I2C/SPI Adapter
 
 <div align="center">
   <p>
-    <img src="doc/front.jpg"/>
+    <img src="doc/board.jpg"/>
   </p>
 </div>
 
 ## Overview
 
 This directory contains the hardware design files for a USB-I2C/SPI adapter based on the FTDI FT232H chip. The adapter enables USB connectivity for I2C and SPI communication with various embedded devices and sensors.
+
+![adapter](doc/front.jpg)
 
 ## Hardware Features
 
@@ -31,6 +33,15 @@ This repository includes the following KiCad project files:
 | `i2cmaster.csv` | Bill of Materials (BOM) |
 | `fp-lib-table` | Footprint library table |
 | `Library.pretty/` | Custom footprint library |
+
+
+## 3D Model
+
+A 3D model of the enclosure is available:
+
+- `F3D/usbi2c.f3d` - Fusion 360 design file for the adapter enclosure
+
+![3dmodel](doc/container.png)
 
 ## Production Files
 
@@ -101,8 +112,8 @@ This hardware design is compatible with:
 - **Layers**: 2-layer PCB
 - **Board Thickness**: 1.6mm (standard)
 - **Copper Weight**: 1 oz (35 μm)
-- **Surface Finish**: ENIG or HASL
-- **Solder Mask**: Green (or custom color)
+- **Surface Finish**: HASL
+- **Solder Mask**: Red (or custom color)
 - **Silkscreen**: White
 
 ## Electrical Characteristics
